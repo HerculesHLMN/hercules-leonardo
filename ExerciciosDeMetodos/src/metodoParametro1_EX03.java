@@ -5,23 +5,19 @@ public class metodoParametro1_EX03 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\nInforme um valor: ");
+        System.out.printf("\nInforme um valor: ");
         int valor = sc.nextInt();
 
-        executarFor();
+        imprimirValores(valor);
 
+        sc.close();
+    }
 
+        public static void imprimirValores(int numeros) {
+            for (int i=0; i<20; i++) {
+                System.out.printf(numeros + i + " ");
 
-
-
-        public static void executarFor() {
-            for ( valor = 0; valor < 21; valor++);
-            System.out.printf("," + valor);
-        }
-
-
-
-
+            }
 
     }
 }
