@@ -5,7 +5,13 @@ public class notasMedia_EX08 {
 
     public static double calcularMedia(double n1, double n2, double n3) {
         double media = (n1 + n2 + n3) / 3;
-        return media;
+
+        if (n1 > 10 || n1 < 0 || n2 > 10 || n2 < 0 || n3 > 10 || n3 < 0 ) {
+            return 0;
+        }
+        else {
+            return media;
+        }
     }
 
     public static void main(String[] args) {
