@@ -35,7 +35,7 @@ public class primaveraVeraoOutonoInverno_EX01 {
         sc.close();
     }
 
-    public static void imprimirPrimavera () {
+    public static void imprimirPrimavera() {
         System.out.println("\nÉ primavera\nEstação das flores.");
     }
 
