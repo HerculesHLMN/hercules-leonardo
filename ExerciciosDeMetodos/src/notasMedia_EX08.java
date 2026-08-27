@@ -9,9 +9,7 @@ public class notasMedia_EX08 {
         if (n1 > 10 || n1 < 0 || n2 > 10 || n2 < 0 || n3 > 10 || n3 < 0 ) {
             return 0;
         }
-        else {
             return media;
-        }
     }
 
     public static void main(String[] args) {
