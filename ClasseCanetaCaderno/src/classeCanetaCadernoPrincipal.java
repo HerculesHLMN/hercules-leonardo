@@ -28,6 +28,6 @@ public class classeCanetaCadernoPrincipal {
 
         System.out.println("\n" + "Produto: " + produto3.nome + "\n" + "Descrição: " + produto3.descricao);
         System.out.println("Preço R$: " + produto3.precoUnitario + "\n" + "Desconto R$: " + produto3.desconto);
-        
+
     }
 }

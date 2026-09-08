@@ -3,6 +3,6 @@ public class classeCirculo {
     double raio;
 
     public double calcularArea(){
-        return Math.PI * raio * raio;
+        return Math.PI * Math.pow(raio,2);
     }
 }
