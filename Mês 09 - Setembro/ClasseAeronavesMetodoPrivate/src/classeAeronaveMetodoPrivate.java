@@ -9,11 +9,11 @@ public class classeAeronaveMetodoPrivate {
     public classeAeronaveMetodoPrivate(String modeloAviao, int capacidadePassageiros,
                                        int velocidadeMaxima, int capacidadeCombustivel, double queimaCombustivelMin) {
 
-        this.modeloAviao = modeloAviao;
-        this.capacidadePassageiros = capacidadePassageiros;
-        this.velocidadeMaxima = velocidadeMaxima;
-        this.capacidadeCombustivel = capacidadeCombustivel;
-        this.queimaCombustivelMin = queimaCombustivelMin;
+        setModeloAviao(modeloAviao);
+        setCapacidadePassageiros(capacidadePassageiros);
+        setVelocidadeMaxima(velocidadeMaxima);
+        setCapacidadeCombustivel(capacidadeCombustivel);
+        setQueimaCombustivelMin(queimaCombustivelMin);
     }
 
     public double calcularTempoVoo() {
@@ -29,7 +29,11 @@ public class classeAeronaveMetodoPrivate {
     }
 
     public void setModeloAviao(String modeloAviao) {
-        this.modeloAviao = modeloAviao;
+        if (modeloAviao == null || modeloAviao.isBlank()) {
+            System.out.println("Erro, Modelo de Aeronave Inválido!");
+        } else {
+            this.modeloAviao = modeloAviao;
+        }
     }
 
     public int getCapacidadePassageiros() {
@@ -37,7 +41,11 @@ public class classeAeronaveMetodoPrivate {
     }
 
     public void setCapacidadePassageiros(int capacidadePassageiros) {
-        this.capacidadePassageiros = capacidadePassageiros;
+        if (capacidadePassageiros < 0) {
+            System.out.println("\nErro, Quantidade de Passageiros da Aeronave " + modeloAviao + " Inválida!");
+        } else {
+            this.capacidadePassageiros = capacidadePassageiros;
+        }
     }
 
     public int getVelocidadeMaxima() {

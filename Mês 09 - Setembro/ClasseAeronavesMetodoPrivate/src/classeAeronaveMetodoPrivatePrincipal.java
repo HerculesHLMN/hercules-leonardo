@@ -4,7 +4,7 @@ public class classeAeronaveMetodoPrivatePrincipal {
 
         classeAeronaveMetodoPrivate boeing737 = new  classeAeronaveMetodoPrivate("Boeing 737", 189, 946, 26020, 45.0);
         classeAeronaveMetodoPrivate airbusA320 = new  classeAeronaveMetodoPrivate("Airbus A320", 180, 871, 24210, 44.0);
-        classeAeronaveMetodoPrivate boeing777 = new  classeAeronaveMetodoPrivate("Boeing 777", 550, 945, 181280, 160.0);
+        classeAeronaveMetodoPrivate boeing777 = new  classeAeronaveMetodoPrivate("Boeing 777", -550, 945, 181280, 160.0);
         classeAeronaveMetodoPrivate embraerE195 = new  classeAeronaveMetodoPrivate("Embraer E195", 146, 871, 21900, 35.0);
 
         classeAeronaveMetodoPrivate[] avioes = {boeing737, airbusA320, boeing777, embraerE195};
