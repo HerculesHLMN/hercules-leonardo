@@ -24,5 +24,7 @@ public class classeMercadoMetodoConstrutor {
 
     public double calcularReceitaTotal() {
         return calcularReceitaMacas() + calcularReceitaLaranjas();
+
+
     }
 }
