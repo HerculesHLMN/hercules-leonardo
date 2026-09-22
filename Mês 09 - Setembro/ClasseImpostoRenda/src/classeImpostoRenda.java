@@ -41,7 +41,7 @@ public class classeImpostoRenda {
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
-            System.out.println("Erro, Nome Inválido!");
+            System.out.println("\nErro, Nome Inválido!");
         } else {
             this.nome = nome;
         }
@@ -53,7 +53,7 @@ public class classeImpostoRenda {
 
     public void setCpf(String cpf) {
         if (cpf == null || cpf.isBlank() || cpf.length() != 11) {
-            System.out.println("Erro, CPF Inválido!");
+            System.out.println("\nErro, CPF Inválido!");
         } else {
             this.cpf = cpf;
         }
@@ -65,7 +65,7 @@ public class classeImpostoRenda {
 
     public void setUf(String uf) {
         if (uf == null || uf.isBlank() || uf.length() != 2) {
-            System.out.println("Erro, UF Inválido!");
+            System.out.println("\nErro, UF Inválido!");
         } else {
             this.uf = uf;
         }
@@ -77,7 +77,7 @@ public class classeImpostoRenda {
 
     public void setRendaAtual(double rendaAtual) {
         if (rendaAtual < 0) {
-            System.out.println("Erro, Renda Inválida!");
+            System.out.println("\nErro, Renda Inválida!");
         } else {
             this.rendaAnual = rendaAtual;
         }
