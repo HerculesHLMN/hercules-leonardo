@@ -9,8 +9,6 @@ public class classeImpostoRendaPrincipal {
 
         classeImpostoRenda[] contribuintes = {lucas, joao, augusto, lara, rafael};
 
-
-
         double maiorImposto = 0;
         classeImpostoRenda contribuinteMaiorImposto = null;
 
