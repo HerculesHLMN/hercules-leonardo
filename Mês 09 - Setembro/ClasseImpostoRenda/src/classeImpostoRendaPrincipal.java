@@ -4,7 +4,7 @@ public class classeImpostoRendaPrincipal {
         classeImpostoRenda lucas = new classeImpostoRenda("Lucas", "11245672667", "SC", 45000);
         classeImpostoRenda joao = new classeImpostoRenda("Joâo", "87477238415", "ES", 21000);
         classeImpostoRenda augusto = new classeImpostoRenda("Augusto", "95246723535", "MA", 14500);
-        classeImpostoRenda lara = new classeImpostoRenda("Lara", "77943256789", "RS", 65000);
+        classeImpostoRenda lara = new classeImpostoRenda("Lara", "779432567", "RS", 65000);
         classeImpostoRenda rafael = new classeImpostoRenda("Rafael", "24518983924", "SC", 1200);
 
         classeImpostoRenda[] contribuintes = {lucas, joao, augusto, lara, rafael};

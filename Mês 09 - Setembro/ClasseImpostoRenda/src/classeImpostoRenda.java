@@ -41,10 +41,10 @@ public class classeImpostoRenda {
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
-            System.out.println("\nErro, Nome Inválido!");
-        } else {
-            this.nome = nome;
+            System.out.println();
+            throw new IllegalArgumentException("Erro, Nome Inválido!");
         }
+            this.nome = nome;
     }
 
     public String getCpf() {
@@ -53,10 +53,10 @@ public class classeImpostoRenda {
 
     public void setCpf(String cpf) {
         if (cpf == null || cpf.isBlank() || cpf.length() != 11) {
-            System.out.println("\nErro, CPF Inválido!");
-        } else {
-            this.cpf = cpf;
+            System.out.println();
+            throw new IllegalArgumentException("Erro, CPF Inválido!");
         }
+            this.cpf = cpf;
     }
 
     public String getUf() {
@@ -65,10 +65,10 @@ public class classeImpostoRenda {
 
     public void setUf(String uf) {
         if (uf == null || uf.isBlank() || uf.length() != 2) {
-            System.out.println("\nErro, UF Inválido!");
-        } else {
-            this.uf = uf;
+            System.out.println();
+             throw new IllegalArgumentException("Erro, UF Inválido!");
         }
+            this.uf = uf;
     }
 
     public double getRendaAtual() {
@@ -77,10 +77,10 @@ public class classeImpostoRenda {
 
     public void setRendaAtual(double rendaAtual) {
         if (rendaAtual < 0) {
-            System.out.println("\nErro, Renda Inválida!");
-        } else {
-            this.rendaAnual = rendaAtual;
+            System.out.println();
+            throw new IllegalArgumentException("Erro, Renda Inválida!");
         }
+            this.rendaAnual = rendaAtual;
     }
 
     @Override
