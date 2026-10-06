@@ -3,12 +3,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class ExemploArrayList {
-
         public static void main(String[] args) {
 
             List<Integer> idades = new ArrayList<>();
 
-            idades.add(21);
+            idades.add(22);
             idades.add(20);
             idades.add(54);
             idades.add(36);
