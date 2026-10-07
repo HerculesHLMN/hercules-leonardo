@@ -20,6 +20,9 @@ public class Veiculo {
     }
 
     public void setMarca(String marca) {
+        if (marca == null || marca.isBlank()) {
+            throw new IllegalArgumentException("Erro, Marca Inválida!");
+        }
         this.marca = marca;
     }
 
@@ -28,6 +31,9 @@ public class Veiculo {
     }
 
     public void setModelo(String modelo) {
+        if (modelo == null || modelo.isBlank()) {
+            throw new IllegalArgumentException("Erro, Modelo Inválido!");
+        }
         this.modelo = modelo;
     }
 
@@ -36,6 +42,9 @@ public class Veiculo {
     }
 
     public void setPlaca(String placa) {
+        if (placa == null || placa.isBlank()) {
+            throw new IllegalArgumentException("Erro, Placa Inválida!");
+        }
         this.placa = placa;
     }
 
@@ -44,6 +53,9 @@ public class Veiculo {
     }
 
     public void setAno(int ano) {
+        if (ano < 0) {
+            throw new IllegalArgumentException("Erro, Ano Inválido!");
+        }
         this.ano = ano;
     }
 
@@ -52,17 +64,18 @@ public class Veiculo {
     }
 
     public void setPreco(double preco) {
+        if (preco < 0) {
+            throw new IllegalArgumentException("Erro, Preço Inválido!");
+        }
         this.preco = preco;
     }
 
     @Override
     public String toString() {
-        return "Veiculo{" +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", placa='" + placa + '\'' +
-                ", ano=" + ano +
-                ", preco=" + preco +
-                '}';
+        return "Marca: " + marca + "\n" +
+                "Modelo: " + modelo + "\n" +
+                "Placa: " + placa + "\n" +
+                "Ano: " + ano + "\n" +
+                "Preço: R$" + preco;
     }
 }
