@@ -4,7 +4,7 @@ import java.util.List;
 public class Concessionaria {
 
     private List<Veiculo> veiculos;
-    
+
     public Concessionaria(){
         veiculos = new ArrayList<Veiculo>();
     }
