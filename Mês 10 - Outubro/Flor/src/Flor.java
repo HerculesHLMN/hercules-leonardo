@@ -45,9 +45,9 @@ public class Flor {
 
     @Override
     public String toString() {
-        return "\nFlor: " +
-                "\nNome=" + nome +
-                "\nPreço=" + preco +
-                "\nCliente=" + nomeCliente;
+        return "\nNome da Flor = " + nome +
+                "\nPreco = R$" + preco +
+                "\nNome do Cliente = " + nomeCliente;
+
     }
 }

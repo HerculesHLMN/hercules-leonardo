@@ -13,11 +13,17 @@ public class FlorArrayList {
         flor.add(f);
     }
 
+    public void imprimirFloresCliente(String nomeCliente) {
+        for (Flor f : obterFloresCliente(nomeCliente)) {
+            System.out.println(f);
+        }
+    }
+
     public List<Flor> obterFloresCliente(String nomeCliente) {
         List<Flor> floresCliente = new ArrayList<Flor>();
 
         for (Flor f : flor) {
-            if (f.getNomeCliente().equalsIgnoreCase(nomeCliente)) {
+            if (f.getNomeCliente().equals(nomeCliente)) {
                 floresCliente.add(f);
             }
         }
