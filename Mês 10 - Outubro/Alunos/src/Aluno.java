@@ -30,7 +30,7 @@ public class Aluno {
     }
 
     public void setIdade(int idade) {
-        if (idade > 0) {
+        if (idade < 0) {
             throw new IllegalArgumentException("Erro, Idade Inválida!");
         }
         this.idade = idade;
@@ -63,7 +63,7 @@ public class Aluno {
     }
 
     public void setMediaFinal(double mediaFinal) {
-        if (mediaFinal > 0) {
+        if (mediaFinal < 0 || mediaFinal > 10) {
             throw new IllegalArgumentException("Erro, Media Final Inválida!");
         }
         this.mediaFinal = mediaFinal;
@@ -71,12 +71,10 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return "Alunos{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", matricula='" + matricula + '\'' +
-                ", curso='" + curso + '\'' +
-                ", mediaFinal=" + mediaFinal +
-                '}';
+        return "\nNome = " + nome +
+                "\nIdade = " + idade +
+                "\nMatricula = " + matricula +
+                "\nCurso = " + curso +
+                "\nMediaFinal = " + mediaFinal;
     }
 }
