@@ -1,10 +1,10 @@
 import java.text.DecimalFormat;
 
-public class ContaPrincipal {
+public class ClasseContaPrincipal {
     public static void main(String[] args) {
 
-        Conta c1 = new Conta("Lucas", 600);
-        Conta c2 = new Conta("João", 250);
+        ClasseConta c1 = new ClasseConta("Lucas", 600);
+        ClasseConta c2 = new ClasseConta("João", 250);
 
         DecimalFormat df = new DecimalFormat("0.00");
 

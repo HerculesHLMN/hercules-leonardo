@@ -1,9 +1,9 @@
-public class Conta {
+public class ClasseConta {
 
     private String nomeTitular;
     private double saldo;
 
-    public Conta(String nomeTitular, double saldo) {
+    public ClasseConta(String nomeTitular, double saldo) {
         setNomeTitular(nomeTitular);
         setSaldo(saldo);
     }
@@ -22,7 +22,7 @@ public class Conta {
         saldo += deposito;
     }
 
-    public void realizarTransferencia(Conta destinatario, double valor) {
+    public void realizarTransferencia(ClasseConta destinatario, double valor) {
         if (valor <= 0 || destinatario == null || valor > saldo) {
             throw new IllegalArgumentException("Erro, Transferência Inválida!");
         }
