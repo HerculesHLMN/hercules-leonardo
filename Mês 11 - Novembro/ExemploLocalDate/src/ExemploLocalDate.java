@@ -22,7 +22,7 @@ public class ExemploLocalDate {
 
         } else {
             System.out.println("\nDaniele é mais nova");
-            
+
         }
     }
 }
