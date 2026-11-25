@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Period;
 
 public class ClassePessoa {
 
@@ -13,6 +14,11 @@ public class ClassePessoa {
     public String getNome() {
         return nome;
     }
+
+    public int obterIdade() {
+        return Period.between(dataNascimento, LocalDate.now()).getYears();
+    }
+
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
@@ -37,6 +43,7 @@ public class ClassePessoa {
     @Override
     public String toString() {
         return "\nNome: " + nome +
-                "\nData de Nascimento: " + dataNascimento;
+                "\nData de Nascimento: " + dataNascimento +
+                "\nIdade: " + obterIdade();
     }
 }
